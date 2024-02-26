@@ -66,7 +66,7 @@ public class WorkflowController {
 
     @GetMapping("/set")
     String set() {
-        result = "result-value";
+        result = "result-value-from-polling";
         return "set";
     }
 
