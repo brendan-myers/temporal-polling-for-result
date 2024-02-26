@@ -1,0 +1,7 @@
+spring:
+  temporal:
+    connection:
+      target: local
+    workers-auto-discovery:
+      packages: com.brendan.temporal
+timeout_s: 60
