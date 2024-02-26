@@ -37,8 +37,6 @@ public class WorkflowController {
                 .build()
             );
 
-        // workflow.getResult();
-
         WorkflowClient.start(workflow::getResult);
 
         Thread.sleep(Duration.ofSeconds(timeout * 3));
