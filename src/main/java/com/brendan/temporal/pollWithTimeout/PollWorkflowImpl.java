@@ -30,10 +30,6 @@ public class PollWorkflowImpl implements PollWorkflow {
 
     @Override
     public String getResult() {
-        try {
-            result = activity.poll();
-        } catch (Exception e) {}
-
         while (result.equals("")) {
             Workflow.await(
                 Duration.ofSeconds(timeout), () -> {

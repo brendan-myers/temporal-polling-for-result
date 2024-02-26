@@ -4,4 +4,4 @@ spring:
       target: local
     workers-auto-discovery:
       packages: com.brendan.temporal
-timeout_s: 60
+timeout_s: 10
